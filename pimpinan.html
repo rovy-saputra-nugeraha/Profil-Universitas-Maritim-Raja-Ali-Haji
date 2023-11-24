@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pimpinan Kampus || UMRAH</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <link href="gambar/univ.png" rel="icon">
+
+    <style>
+        .google-map {
+            width: 100%; /* Default width for mobile */
+        }
+    
+        @media screen and (min-width: 768px) {
+            /* Sesuaikan breakpoint (768px) berdasarkan kebutuhan pengguna */
+            .google-map {
+            width: 200%; /* Width for desktop */
+            }
+        }
+        /* Custom CSS for styling */
+        .video-container {
+            position: relative;
+            overflow: hidden;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            margin-bottom: 20px;
+            border: 10px solid #ffc107; /* White border around the frame */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+            transition: box-shadow 0.3s ease; /* Add transition for box-shadow property */
+        }
+
+        .video-container:hover {
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); /* Change box-shadow on hover */
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none; /* Remove the border from the iframe */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status"></div>
+            <img src="gambar/univ.png" alt="Logo" style="width: 30px; height: 30px; position: absolute;">
+        </div>
+        <!-- Spinner End -->
+
+
+         <!-- Navbar Start -->
+         <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <a href="index1.php" class="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
+                <h3 id="universityName" class="m-0 text-primary" style="color: blue;">
+                    <img class="logo-left" src="gambar/univ.png" alt="Logo 1" height="60" width="60"/>
+                    <span id="universityFullName">Universitas Maritim Raja Ali Haji</span>
+                    <span id="universityAbbreviation" style="display: none;">UMRAH</span>
+                </h3>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index1.php" class="nav-item nav-link active">Home</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Fakultas</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="https://ft.umrah.ac.id/" class="dropdown-item">Fakultas Teknik dan Teknologi Kemaritiman</a>
+                            <a href="https://fe.umrah.ac.id/" class="dropdown-item">Fakultas Ekonomi dan Bisnis</a>
+                            <a href="https://fisip.umrah.ac.id/" class="dropdown-item">Fakultas Ilmu Sosial dan Ilmu Politik</a>
+                            <a href="https://fikp.umrah.ac.id/" class="dropdown-item">Fakultas Ilmu Kelautan dan Perikanan</a>
+                            <a href="https://umrah.ac.id/" class="dropdown-item">Fakultas Keguruan dan Ilmu Pendidikan</a>
+                        </div>
+                    </div>
+                    <a href="#footer" class="nav-item nav-link">Informasi</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Berita</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="umrahtv.html" class="dropdown-item">UMRAH TV</a>
+                            <a href="https://umrah.ac.id/archives/category/berita" class="dropdown-item">UMRAH INEWS</a>
+                            <a href="kampusmerdeka.html" class="dropdown-item">Kampus Merdeka</a>
+                            <a href="404.html" class="dropdown-item">404</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="utama.html" class="dropdown-item">Kabar UMRAH</a>
+                            <a href="visi.html" class="dropdown-item">Visi Misi</a>
+                            <a href="sejarah.html" class="dropdown-item">Sejarah</a>
+                            <a href="pimpinan.html" class="dropdown-item">Pimpinan Kampus</a>
+                            <a href="contact.php" class="dropdown-item">Costumer Service</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="login.php" class="btn btn-primary rounded-0 py-4 px-lg-5 d-block d-lg-block">Absensi</a>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+         <!-- About 2 -->
+         <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <h1 class="mb-4" style="text-align: right;">Jajaran Petinggi Universitas Maritim Raja Ali Haji</h1>
+                        <p class="mb-4" align="justify">Universitas Maritim Raja Ali Haji dipimpin oleh sejumlah petinggi, termasuk Rektor yang memimpin kebijakan umum dan pengembangan strategis, Dekan Fakultas yang mengelola program akademik, dan Wakil Rektor Bidang Riset dan Pengembangan yang fokus pada peningkatan kegiatan riset. Mereka bekerja bersama untuk menjadikan universitas sebagai pusat keunggulan di bidang pendidikan tinggi, riset, dan pengabdian masyarakat, dengan tujuan mengembangkan potensi maritim di wilayah ASEAN. Kepala Biro Kerjasama dan Pengembangan Masyarakat serta Kepala Humas turut berperan dalam membangun kerjasama eksternal dan menyampaikan informasi positif mengenai pencapaian universitas kepada masyarakat luas.</p>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="row g-0 about-bg rounded overflow-hidden">
+                        <img class="img-fluid w-100" src="gambar/Berita.jpg" style="height: 350px;">
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- About 2 End -->
+
+         <!-- Rektor -->
+         <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="row g-0 about-bg rounded overflow-hidden">
+                        <img class="img-fluid w-100" src="gambar/Rektor.jpg" style="height: 700px;">
+                    </div>
+                </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <h1 class="mb-4">Rektor </h1>
+                        <h3 class="mb-4">Riwayat Pendidikan</h3>
+                        <p><i class="fa fa-check text-primary me-3"></i>S1 Universitas Riau,Ilmu Kelautan, 1998</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>S2 Université d’Aix-Marseille, Biosciences Marine, 2000</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>S3 Université d’Aix-Marseille, Kimia Analitik, 2004 </p>
+                        <h3 class="mb-4">Aktivitas Profesional</h3>
+                        <p><i class="fa fa-check text-primary me-3"></i>REKTOR, Universitas Maritim Raja Ali Haji (UMRAH), Kepulauan Riau</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Guru Besar Bidang Ilmu Pencemaran Laut dan Bioremediasi, Fakultas Ilmu kelautan dan Perikanan UMRAH</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Editor-in-Chief, jurnal Omni-Akuatika – Universitas Jenderal Soedirman</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Ketua Komisi Sumberdaya Maritim – Dewan Riset Daerah, Propinsi Kepulauan Riau</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Senior Scientist Pusat Kajian Sumberdaya Pesisir dan Lautan–IPB dan Pusat Studi Biosains Maritim- UNSOED</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Ketua Umum ISOI 2021-2024</p>
+                        <a class="btn btn-primary py-3 px-5 mt-3" href="https://ppid.umrah.ac.id/wp-content/uploads/2021/07/Agung-Dhamar-SYakti-Rektor-Pengumuman_Harta_Kekayaan_LHKPN_658989.pdf">LHKPN-Rektor</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Rektor -->
+         <!-- Waka Rektor I-->
+         <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="row g-0 about-bg rounded overflow-hidden">
+                        <img class="img-fluid w-100" src="gambar/Waka1.jpeg" style="height: 600px;">
+                    </div>
+                </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <h1 class="mb-4">Wakil Rektor I</h1>
+                        <h3 class="mb-4">Riwayat Pendidikan</h3>
+                        <p><i class="fa fa-check text-primary me-3"></i>S1 Universitas Islam Riau</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>S2 Universitas Brawijaya</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>S3 Universitas Riau</p>
+                        <h3 class="mb-4">Aktivitas Profesional</h3>
+                        <p><i class="fa fa-check text-primary me-3"></i>Wakil Dekan II FIKP UMRAH</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Ketua Jurusan Budidaya Perairan</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Sekretaris Jurusan Budidaya Perairan</p>
+                        <a class="btn btn-primary py-3 px-5 mt-3" href="https://ppid.umrah.ac.id/wp-content/uploads/2023/09/Wakil-Rektor-I-_-Pengumuman_Harta_Kekayaan_LHKPN_688075.pdf">LHKPN-Wakil Rektor I</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Waka Rektor I -->
+        <!-- Waka Rektor II-->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="row g-0 about-bg rounded overflow-hidden">
+                        <img class="img-fluid w-100" src="gambar/Waka2.jpeg" style="height: 600px;">
+                    </div>
+                </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <h1 class="mb-4">Wakil Rektor II</h1>
+                        <h3 class="mb-4">Riwayat Pendidikan</h3>
+                        <p><i class="fa fa-check text-primary me-3"></i>S1 Universitas Andalas</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>S2 Universitas Andalas</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>S3 Universitas Andalas</p>
+                        <h3 class="mb-4">Aktivitas Profesional</h3>
+                        <p><i class="fa fa-check text-primary me-3"></i>Sekretaris LPPM 2010-2013</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Wakil Dekan II FKIP UMRAH 2013-2017</p>
+                        <a class="btn btn-primary py-3 px-5 mt-3" href="https://ppid.umrah.ac.id/wp-content/uploads/2023/09/Wakil-Rektor-II_Pengumuman_Harta_Kekayaan_LHKPN_897318.pdf">LHKPN-Wakil Rektor II</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Waka Rektor II-->
+         <!-- Waka Rektor II-->
+         <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="row g-0 about-bg rounded overflow-hidden">
+                        <img class="img-fluid w-100" src="gambar/Wakaa3.jpg" style="height: 600px;">
+                    </div>
+                </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <h1 class="mb-4">Wakil Rektor II</h1>
+                        <h3 class="mb-4">Riwayat Pendidikan</h3>
+                        <p><i class="fa fa-check text-primary me-3"></i>S1 Universitas Islam Sumatera Utara</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>S2 Universitas 17 Agustus 1945 Jakarta</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>S3 Universitas Islam Sultan Agung</p>
+                        <h3 class="mb-4">Aktivitas Profesional</h3>
+                        <p><i class="fa fa-check text-primary me-3"></i>Wakil Rektor III UMRAH (sejak 6 Februari 2023)</p>
+                        <a class="btn btn-primary py-3 px-5 mt-3" href="#">LHKPN-Wakil Rektor III</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Waka Rektor II-->
+        <!-- Category 2 -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <h1 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Struktur Pimpinan UMRAH</h1>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="cat-item rounded p-4" href="https://www.scopus.com/authid/detail.uri?authorId=6507346312">
+                            <img src="gambar/Rektor.jpg" alt="Rektor" class="img-fluid mb-4" style="width: 100%; height: 100%; object-fit: cover;"><br><br><br>
+                            <h3 class="mb-3">Rektor</h3>
+                            <h4>Prof. Dr. Agung Dhamar Syakti, DEA</h4>
+                            <h5 align="center" class="mb-3 text-primary">Selengkapnya</h5>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="cat-item rounded p-4" href="https://www.scopus.com/authid/detail.uri?authorId=57201186146">
+                            <img src="gambar/Waka1.jpeg" alt="Wakil Rektor 1" class="img-fluid mb-4" style="width: 100%; height: 100%; object-fit: cover;">
+                            <h3 class="mb-3">Wakil Rektor I</h3>
+                            <h4>Prof. Dr. Agung Dhamar Syakti, DEA</h4>
+                            <h5 align="center" class="mb-3 text-primary">Selengkapnya</h5>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="cat-item rounded p-4" href="https://www.scopus.com/authid/detail.uri?authorId=57218898790">
+                            <img src="gambar/Waka2.jpeg" alt="Wakil Rektor 2" class="img-fluid mb-4" style="width: 100%; height: 100%; object-fit: cover;">
+                            <h3 class="mb-3">Wakil Rektor II</h3>
+                            <h4>Prof. Dr. Agung Dhamar Syakti, DEA</h4>
+                            <h5 align="center" class="mb-3 text-primary">Selengkapnya</h5>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="cat-item rounded p-4" href="#">
+                            <img src="gambar/Wakaa3.jpg" alt="Wakil Rektor 3" class="img-fluid mb-4" style="width: 100%; height: 100%; object-fit: cover;"><br><br><br>
+                            <h3 class="mb-3">Wakil Rektor III</h3>
+                            <h4>Prof. Dr. Agung Dhamar Syakti, DEA</h4>
+                            <h5 align="center" class="mb-3 text-primary">Selengkapnya</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Category 2 End -->
+
+         <!-- Footer Start -->
+         <div id="footer" class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <img src="gambar/LogoB.png" alt="Logo" class="footer-logo"/><br><br><br>
+                        <h5 class="text-white mb-4">Contact</h5>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Jalan Raya Dompak - Tanjungpinang 29124, Provinsi Kepulauan Riau, PO. BOX 155</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+62-771-4500089</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>email@umrah.ac.id</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href="https://twitter.com/umrah_official"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/official.umrah.page/?locale=id_ID"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/channel/UCE5GhN4N6lmPYC8QjnsZxSw"><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/umrah.official/?hl=id"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Komunitas Maritim</h5>
+                        <p>Mari menjadi bagian Universitas Maritim Raja Ali Haji</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <a href="contact.php">
+                            <button type="button" class="btn btn-primary">Gabung</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                         <!--Class Iframe Cuy-->
+                            <iframe
+                            class="google-map mt-4"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d766!2d104.4731548!3d0.8704796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d972f694e946d7%3A0xfe529024b9f48504!2sUniversitas%20Maritim%20Raja%20Ali%20Haji%20%28UMRAH%29%20-%20Kampus%20Dompak!5e1!3m2!1sid!2sid!4v1657814406289"
+                            width="225%"
+                            height="350"
+                            allowfullscreen=""
+                            loading="lazy"
+                            >
+                            </iframe>
+                        <!--Clouse Class Iframe Cuy-->
+                    </div>
+                  
+            </div><br>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; UMRAH 2023, All Right Reserved. 
+							Designed By Rovy Saputra Nugeraha
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+     <!-- JavaScript Atur Responsive Pengguna -->
+     <script>
+        function changeText() {
+            var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+            var universityNameElement = document.getElementById("universityName");
+            var universityFullNameElement = document.getElementById("universityFullName");
+            var universityAbbreviationElement = document.getElementById("universityAbbreviation");
+
+            if (screenWidth <= 767) {
+                universityFullNameElement.style.display = "none";
+                universityAbbreviationElement.style.display = "inline";
+            } else {
+                universityFullNameElement.style.display = "inline";
+                universityAbbreviationElement.style.display = "none";
+            }
+        }
+
+        // Panggil fungsi saat halaman dimuat dan saat layar diubah ukurannya
+        window.onload = changeText;
+        window.onresize = changeText;
+    </script>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
