@@ -29,7 +29,7 @@ if(isset($_POST['send'])){
         $mail->send();
         header("Location: contact.php?email_sent=1");
     } catch (Exception $e) {
-        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+        echo "Pesan tidak dapat dikirim!. Mailer Error: {$mail->ErrorInfo}";
     }
 }
 ?>
@@ -70,7 +70,7 @@ if(isset($_POST['send'])){
         .google-map-container {
         position: relative;
         overflow: hidden;
-        padding-bottom: 87%; /* 16:10 aspect ratio for desktop */
+        padding-bottom: 87%; /* Rasio aspek 16:10 untuk desktop */
         height: 0;
     }
 
@@ -84,9 +84,9 @@ if(isset($_POST['send'])){
     }
 
     @media (max-width: 767px) {
-        /* Adjust styles for screens less than 768px wide (mobile) */
+        /* Menyesuaikan gaya untuk layar dengan lebar kurang dari 768 piksel (seluler) */
         .google-map-container {
-            padding-bottom: 100%; /* You can adjust this value for a different aspect ratio on mobile */
+            padding-bottom: 100%; /* Anda dapat menyesuaikan nilai ini untuk rasio aspek yang berbeda di seluler */
         }
     }
 </style>
