@@ -149,14 +149,3 @@ if ($cek_page->num_rows != 0) {
                 });
         }
     </script>
-<!-- <script>
-function confirmSubmit() {
-    var msg;
-    msg = "Apakah Anda Yakin Akan Menghapus Data ? ";
-    var agree=confirm(msg);
-    if (agree)
-    return true ;
-    else
-    return false ;
-}
-</script> -->
