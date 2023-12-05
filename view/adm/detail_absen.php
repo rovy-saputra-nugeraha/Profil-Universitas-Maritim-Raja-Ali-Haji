@@ -32,7 +32,10 @@
 							<td>$no</td>
 							<td>$name</td>
 							<td>$school</td>
-							<td><a href='absensi&id_siswa=$id_siswa' title='Absensi $name'>Lihat Absensi</a></td>
+							<td>
+									<a href='absensi&id_siswa=$id_siswa' class='btn btn-success' title='Absensi $name'>Lihat Absensi</a>
+							</td>
+
 						</tr>";
 				}
 				echo "</tbody></table>";
