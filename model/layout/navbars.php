@@ -5,7 +5,7 @@
   <span class="icon-bar"></span>
   <span class="icon-bar"></span>
 </button>
-  <a class="navbar-brand" href="home">Absensi Pegawai Universitas Maritim Raja Ali Haji</a>
+  <a class="navbar-brand" href="home">Absensi Pegawai UMRAH</a>
   </div>
 <div id="navbar" class="navbar-collapse collapse">
 <ul class="nav navbar-nav navbar-right visible-xs visible-sm">
