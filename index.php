@@ -1,10 +1,4 @@
 <?php
-/**
- * Absensi Siswa Prakerin
- * codinger-mini.blogspot.com
- * fb.me/rizal.ofdraw
- */
-
 session_start();
 include './lib/db/dbconfig.php';
 date_default_timezone_set('Asia/Jakarta');
