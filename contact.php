@@ -17,8 +17,8 @@ if(isset($_POST['send'])){
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'rovysaputra10@gmail.com'; // Your Gmail email address
-        $mail->Password = 'mdxmupvhzrspcqzm'; // Your Gmail App Password
+        $mail->Username = 'rovysaputra10@gmail.com'; // Alamat G-Mail
+        $mail->Password = 'mdxmupvhzrspcqzm'; // Password Kunci Aplikasi
         $mail->Port = 587; // Use 587 for TLS or 465 for SSL
         $mail->SMTPSecure = 'tls'; // Use 'tls' or 'ssl'
         $mail->isHTML(true);
