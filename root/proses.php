@@ -1,9 +1,4 @@
 <?php
-/** 
- *  Absensi Siswa Prakerin
- *  codinger-mini.blogpsot.com
- *  fb.me/rizal.ofdraw
- */
 include '../lib/db/dbconfig.php';
 	if (isset($_POST['add_pbXia1Zasww12Q'])) {
 		$query = $conn->query("SELECT*FROM user");
