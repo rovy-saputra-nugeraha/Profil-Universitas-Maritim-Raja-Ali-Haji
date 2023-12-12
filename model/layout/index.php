@@ -1,3 +1,3 @@
 <?php
-	echo "<script>window.alert('Waaahh.. Bandel ya !! ');window.location=('../../home');</script>"; 
+	echo "<script>window.alert('Waaahh.. Jangan Begitu Ya!! ');window.location=('../../home');</script>"; 
 ?>

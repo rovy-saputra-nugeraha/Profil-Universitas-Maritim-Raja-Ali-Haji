@@ -1,4 +1,6 @@
 <?php
+/* Sebuah blok pengaturan routing yang berfungsi untuk mengarahkan pengguna ke halaman yang sesuai berdasarkan nilai variabel $page dan status sesi (session).*/
+
 if (strcmp($page, "absen")==0) {
         if (isset($_SESSION['sw'])) {
           include './view/absen.php';

@@ -36,7 +36,7 @@ elseif (isset($_GET['logout'])) {
 }
 /**********************************************************/
 //
-//				Proses untuk User Siswa
+//				Proses untuk User Pegawai
 //
 /**********************************************************/
 elseif (isset($_GET['absen'])) {
@@ -146,7 +146,7 @@ elseif (isset($_POST['simpan_note'])) {
 
 /**********************************************************/
 //
-//				Proses untuk User Pembimbing
+//				Proses untuk User Admin
 //
 /**********************************************************/
 elseif (isset($_GET['accx_absen'])) {
@@ -193,7 +193,7 @@ elseif (isset($_GET['accx_absen'])) {
 		}
 	}
 }
-// Aksi pembimbing buat konfirmasi absen
+// Aksi Admin buat konfirmasi absen
 elseif (isset($_GET['acc_absen'])) {
 	if (!isset($_SESSION['pb'])) {
 		header("location:home");
@@ -292,7 +292,7 @@ elseif (isset($_POST['acc_absen2'])) {
 	}
 
 }
-// Aksi pembimbing buat declie absen
+// Aksi Admin buat declie absen
 elseif (isset($_GET['dec_absen'])) {
 	if (!isset($_SESSION['pb'])) {
 		header("location:home");
@@ -440,7 +440,7 @@ elseif (isset($_GET['dec_note'])) {
 		
 	}
 }
-// Tambah siswa
+// Tambah Pegawai
 elseif (isset($_POST['add_siswa'])) {
 	$query = $conn->query("SELECT id_user FROM user ORDER BY id_user DESC");
 	$ambil = $query->fetch_assoc();
@@ -507,7 +507,7 @@ elseif (isset($_POST['add_siswa'])) {
 	}
 	
 }
-// Edit siswa
+// Edit Pegawai
 elseif (isset($_POST['edit_siswa'])) {
 	$id = mysqli_real_escape_string($conn, $_POST['id_user']);
 	$nis = mysqli_real_escape_string($conn, $_POST['nis']);
@@ -543,7 +543,7 @@ elseif (isset($_POST['edit_siswa'])) {
 	}
 	
 }
-// Delete siswa
+// Delete Pegawai
 elseif (isset($_GET['del_siswa'])) {
 	$id = mysqli_real_escape_string($conn, $_GET['del_siswa']);
 	$sql_d = "DELETE FROM detail_user WHERE id_user=?";
@@ -588,7 +588,7 @@ elseif (isset($_POST['change-pwd'])) {
 }
 /**********************************************************/
 //
-//				Proses Untuk Orang bandel!
+//				Proses Untuk Hacker!
 //
 /**********************************************************/
 else {
