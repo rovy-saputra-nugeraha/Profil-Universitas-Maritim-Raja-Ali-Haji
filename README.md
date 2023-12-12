@@ -1,4 +1,4 @@
-# Profil Universitas Maritim Raja Ali Haji Web
+# Web Profile Universitas Maritim Raja Ali Haji
 
 ## Overview
 This web project is designed to showcase the profile of Universitas Maritim Raja Ali Haji.
