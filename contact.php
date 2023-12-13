@@ -17,13 +17,13 @@ if(isset($_POST['send'])){
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'rovysaputra10@gmail.com'; // Alamat G-Mail
-        $mail->Password = 'mdxmupvhzrspcqzm'; // Password Kunci Aplikasi
+        $mail->Username = '@gmail.com'; // Alamat G-Mail
+        $mail->Password = ''; // Password Kunci Aplikasi
         $mail->Port = 587; // Use 587 for TLS or 465 for SSL
         $mail->SMTPSecure = 'tls'; // Use 'tls' or 'ssl'
         $mail->isHTML(true);
         $mail->setFrom($email, $name);
-        $mail->addAddress('rovysaputra10@gmail.com');
+        $mail->addAddress('@gmail.com');
         $mail->Subject = "$email ($subject)";
         $mail->Body = $message;
         $mail->send();
